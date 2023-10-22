@@ -1,13 +1,5 @@
 import chalk from 'chalk';
-
-type Color = 'red' | 'blue' | 'grey';
-
-type Cell = {
-  value: string;
-  color?: Color;
-};
-
-type Grid = Cell[][];
+import { Cell, Grid } from './types';
 
 const colorText = (cell: Cell) => {
   const { color, value } = cell;
