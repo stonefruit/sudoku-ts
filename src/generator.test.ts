@@ -9,7 +9,7 @@ describe('generateGrid', () => {
 
 describe('generateCellValues', () => {
   it('should generate grid with 81 cells', () => {
-    const gridValues = generateCellValues(0);
+    const gridValues = generateCellValues('0');
     expect(gridValues.flat().length).toBe(81);
   });
 });
